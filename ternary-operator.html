@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Please open browser console</h1>
+        <h2>Ctrl + Shift + J</h2>
+    </center>
+    <script>
+        function checkStatus() {
+            age = document.getElementById('user-age').value;
+            var age_limit = 18;
+            const result = (age >= age_limit) ? `Can driver` : `Can't driver`;
+            alert(result);
+        }
+    </script>
+    <center>
+        <input type="number" placeholder="Enter your age" id="user-age">
+        <br>
+        <button onclick="checkStatus()">Print Click</button>
+    </center>
+    <pre>
+function checkStatus() {
+    age = document.getElementById('user-age').value;
+    var age_limit = 18;
+    const result = (age >= age_limit) ? `Can driver` : `Can't driver`;
+    alert(result);
+}
+    </pre>
+</body>
+
+</html>

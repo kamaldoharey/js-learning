@@ -11,22 +11,19 @@
 
 <body>
     <center>
-        <h1>Please open browser console</h1>
-        <h2>Ctrl + Shift + J</h2>
-    </center>
-    <center>
-        There are three type
+        <button onclick="fn()">Click me to call a function</button>
     </center>
     <script>
-        console.log("This is conolse log");
-        console.warn("This is warning");
-        console.error("This is error");
+        function fn() {
+            alert(`function is called`);
+        }
     </script>
+    <hr>
     <pre>
-console.log("This is conolse log");
-console.warn("This is warning");
-console.error("This is error");
-</pre>
+function fn() {
+    alert(`A function is called`);
+}
+    </pre>
 </body>
 
 </html>
