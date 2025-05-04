@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object Example</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <script>
-        var obj = {
-            name: "Kamal Kumar Doharey",
-            age: 24,
-            location: "Jodhpur",
-            language: ["hindi", "english"]
-        }
+      var obj = {
+        name: "Kamal Kumar Doharey",
+        age: 24,
+        location: "Jodhpur",
+        language: ["hindi", "english"],
+      };
     </script>
     <table border="1" color="green">
-        <tr>
-            <td>Name</td>
-            <td>
-                <script>
-                    document.write(obj.name)
-                </script>
-            </td>
-        </tr>
+      <tr>
+        <td>Name</td>
+        <td>
+          <script>
+            document.write(obj.name);
+          </script>
+        </td>
+      </tr>
 
+      <tr>
+        <td>Age</td>
+        <td>
+          <script>
+            document.write(obj.age);
+          </script>
+        </td>
+      </tr>
 
-        <tr>
-            <td>Age</td>
-            <td>
-                <script>
-                    document.write(obj.age)
-                </script>
-            </td>
-        </tr>
+      <tr>
+        <td>Location</td>
+        <td>
+          <script>
+            document.write(obj.location);
+          </script>
+        </td>
+      </tr>
 
-        <tr>
-            <td>Location</td>
-            <td>
-                <script>
-                    document.write(obj.location)
-                </script>
-            </td>
-        </tr>
-
-        <tr>
-            <td>Name</td>
-            <td>
-                <script>
-                    obj.language.forEach(element => {
-                        document.write(element, ",")
-                    });
-                </script>
-            </td>
-        </tr>
-
-
+      <tr>
+        <td>Name</td>
+        <td>
+          <script>
+            obj.language.forEach((element) => {
+              document.write(element, ",");
+            });
+          </script>
+        </td>
+      </tr>
     </table>
     <pre>
 var obj = {
@@ -68,6 +64,5 @@ var obj = {
      language: ["hindi", "english"]
 }
     </pre>
-</body>
-
+  </body>
 </html>
