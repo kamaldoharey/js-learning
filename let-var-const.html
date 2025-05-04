@@ -19,7 +19,7 @@
         console.log(l);
       }
       console.error(
-        `%c Let is scoped bloked  \n\ that is why error genrated`,
+        `%c Let is scoped blocked  \n\ that is why error generated`,
         "background: red; color: white;"
       );
       //    console.log(l);
@@ -29,39 +29,39 @@
         console.log(v);
       }
       console.log(
-        `%c var is global bloked \n\ so we can use it outside of loop`,
+        `%c var is global blocked \n\ so we can use it outside of loop`,
         "background: green; color: white;"
       );
       console.log(v);
 
-      // conast
+      // const
       for (const c = 0; c <= 5; c++) {
         console.warn(
-          `%c Value of const can't be change \n\ that is why error genrated`,
+          `%c Value of const can't be change \n\ that is why error generated`,
           "background: red; color: white;"
         );
       }
     </script>
     <pre>
-//    Let
-for (let l = 0; l <= 5; l++) {
-    console.log(l)
-}
-console.error(`%c Let is scoped bloked  \n\ that is why error genrated`, 'background: red; color: white;');
-//    console.log(l);
+      //    Let
+      for (let l = 0; l <= 5; l++) {
+          console.log(l)
+      }
+      console.error(`%c Let is scoped blocked  \n\ that is why error generated`, 'background: red; color: white;');
+      //    console.log(l);
 
 
-// var
-for (var v = 0; v <= 5; v++) {
-    console.log(v)
-}
-console.log(`%c var is global bloked \n\ so we can use it outside of loop`, 'background: green; color: white;');
-console.log(v);
+      // var
+      for (var v = 0; v <= 5; v++) {
+          console.log(v)
+      }
+      console.log(`%c var is global blocked \n\ so we can use it outside of loop`, 'background: green; color: white;');
+      console.log(v);
 
-// conast
-for (const c = 0; c <= 5; c++) {
-    console.warn(`%c Value of const can't be change \n\ that is why error genrated`, 'background: red; color: white;');
-}
+      // const
+      for (const c = 0; c <= 5; c++) {
+          console.warn(`%c Value of const can't be change \n\ that is why error generated`, 'background: red; color: white;');
+      }
     </pre>
   </body>
 </html>
