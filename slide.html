@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<input type="range" id="slider" />
+		<p></p>
+		<script>
+			var slider = document.querySelector('#slider');
+			function updatePara() {
+				document.querySelector('p').textContent = slider.value * 10;
+			}
+			updatePara();
+			slider.addEventListener('input', updatePara);
+		</script>
+	</body>
+</html>
